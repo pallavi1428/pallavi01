@@ -1,0 +1,36 @@
+.blurBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(to right, rgba(53, 9, 5, 0.7) 50%, rgba(53, 9, 5, 0) 100%), url("../assets/pic1.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+}
+
+@media (max-width: 767px) {
+  .relative.overflow-hidden.h-[400px] {
+    height: 200px; /* Adjust the height as needed */
+  }
+
+  .grid.md\:grid-cols-2 {
+    grid-template-columns: 1fr; /* Change to a single column for mobile */
+  }
+
+  .grid.md\:grid-cols-2 > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid.md\:grid-cols-2 > div:first-child {
+    margin-bottom: 20px; /* Add bottom margin for the text content */
+  }
+
+  .grid.md\:grid-cols-2 > div:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the image container */
+  }
+}

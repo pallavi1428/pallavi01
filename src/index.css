@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    li {
+        @apply p-4;
+    }
+    button {
+        @apply text-white border bg-hash350905 border-black hover:bg-transparent hover:text-hash350905 rounded-md;
+    }
+}
+
+html,body {
+    overflow-x: hidden;
+  }
+
+.home{
+    padding:2px;
+}
+
